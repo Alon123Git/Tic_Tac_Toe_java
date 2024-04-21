@@ -45,38 +45,6 @@ public class App {
         }
         System.out.println("game over");
     }
-    
-    // public static void main(String[] args) {
-    //     while (true) {
-    //         if (gameStarted) {
-    //             isBegin = isStart(board, i, j, isTurn);
-    //             if (isBegin) {
-    //                 isTurn = true;
-    //             }
-    //             gameStarted = false; 
-    //         }
-    //         choosePos(board, choice, isTurn, O, X, i, j); // call method to choose position for the player that have the turn
-    //         isTurn = !isTurn; // change turn
-    //         //printBoard(board, i, j);
-    //         end = isGameOver(board, O, X, i, j); // store true if game over, else false in a boolean variable
-    //         if (end) {
-    //             if (OWin(board, O) == 1) { // if O win 
-    //                 System.out.println("O won");
-    //                 scoreO++; // increase by 1 score for O
-    //             } else if (XWin(board, X) == 2) { // if X win
-    //                 System.out.println("X won");
-    //                 scoreX++; // increase by 1 score for X
-    //             }
-    //             System.out.println("the score is:\n0 - " + scoreO + " \nX - " + scoreX);
-    //         if (moreGame(newGame) == 2) // if method moreGame return 2
-    //             break; 
-    //             resetBoard(board); // call method to print the board
-    //             gameStarted = true;
-    //         }
-            
-    //     }
-    //     System.out.println("game over");
-    // }
 
     /**
      * 12 lines
@@ -188,10 +156,6 @@ public class App {
             printBoard(board, i, j); // call method to print the board     
             choice = scanner.nextInt();
         }
-        // while (choice < 1 || choice > 9) {
-        //     System.out.println("enter a valid pos\nenter position");
-        //     choice = scanner.nextInt();
-        // }
         
         if (isTurn) {
             if (choice == 1) board[0][0] = O;
